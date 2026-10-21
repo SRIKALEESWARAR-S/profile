@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sri Kaleeswarar S — Academic Portfolio</title>
+<style>
+:root{--ac:#b3179a;--ac2:#e04fc0;--acd:#8c0f77;--g1:#ffe3f6;--g2:#e6edff;--tint:#fbe9f7;--ink:#1d2430;--mut:#5a6577;--line:rgba(120,130,160,.35);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+html{scroll-behavior:smooth;height:100%}*,*::before,*::after{box-sizing:inherit}
+body{margin:0;min-height:100%;color:var(--ink);font:15px/1.6 "Segoe UI",Frutiger,Tahoma,Verdana,sans-serif;background:radial-gradient(900px 500px at 10% -5%,var(--g1),transparent 60%),radial-gradient(800px 500px at 95% 5%,var(--g2),transparent 60%),radial-gradient(700px 500px at 50% 100%,var(--g1),transparent 60%),#fafcff;background-attachment:fixed}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;margin:10px auto 0;max-width:1040px;width:calc(100% - 20px);display:flex;align-items:center;gap:8px;padding:6px 10px;border-radius:12px;background:linear-gradient(rgba(255,255,255,.88),rgba(255,255,255,.58));border:1px solid var(--line);box-shadow:inset 0 1px 0 #fff,0 6px 20px rgba(60,70,120,.12);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+header b{font-weight:600;white-space:nowrap;margin-right:auto}header b span{color:var(--ac)}
+nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+nav a{color:var(--ink);text-decoration:none;padding:4px 12px;border-radius:7px;font-size:13.5px;border:1px solid transparent;white-space:nowrap}
+nav a:hover,nav a.on{background:linear-gradient(#fff,var(--tint));border-color:var(--ac2);box-shadow:inset 0 1px 0 #fff}
+.sw{display:flex;gap:5px;flex:none;padding-left:6px;border-left:1px solid var(--line)}
+.sw button{width:18px;height:18px;border-radius:50%;border:1px solid rgba(0,0,0,.35);cursor:pointer;padding:0;box-shadow:inset 0 2px 3px rgba(255,255,255,.7)}
+.sw button.on{outline:2px solid var(--ink);outline-offset:1px}
+main{max-width:1040px;margin:0 auto;padding:22px 10px 50px}
+.page{display:none}.page.on{display:block}
+.panel{background:linear-gradient(rgba(255,255,255,.92),rgba(255,255,255,.72));border:1px solid var(--line);border-radius:12px;box-shadow:inset 0 1px 0 #fff,0 8px 26px rgba(60,70,120,.10);margin-bottom:22px;overflow:hidden}
+.ph{padding:9px 18px;font-weight:600;background:linear-gradient(#fff,#f1f4fb 50%,#e9edf7 51%,#f4f6fc);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:9px}
+.ph::before{content:"";width:9px;height:9px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,var(--ac));box-shadow:0 0 0 2px var(--tint)}
+.pb{padding:18px}
+.hero{display:grid;grid-template-columns:1fr 170px;gap:26px;align-items:center;padding:30px 24px}
+h1{font:300 40px/1.15 "Segoe UI Light","Segoe UI",sans-serif;margin:0 0 6px;letter-spacing:-.5px}h1 span{color:var(--ac);font-weight:400}
+.role{color:var(--mut);margin:0 0 14px}
+.orb{width:150px;height:150px;border-radius:50%;margin:auto;display:grid;place-items:center;overflow:hidden;font:300 52px "Segoe UI Light","Segoe UI",sans-serif;color:#fff;background:radial-gradient(circle at 30% 25%,#fff 0,var(--tint) 12%,var(--ac2) 45%,var(--ac) 100%);box-shadow:inset 0 -12px 24px rgba(0,0,0,.2),inset 0 8px 14px rgba(255,255,255,.6),0 12px 30px rgba(0,0,0,.2)}
+.orb img{width:100%;height:100%;object-fit:cover}
+.btn{display:inline-block;text-decoration:none;color:var(--ink);padding:6px 20px;border-radius:5px;border:1px solid #8a93a8;background:linear-gradient(#fdfdff,#eef1f8 48%,#dde3f0 50%,#e9eef8);box-shadow:inset 0 1px 0 #fff;font-size:14px;margin:0 6px 6px 0}
+.btn:hover{border-color:var(--ac)}
+.btn.pri{color:#fff;border-color:var(--acd);background:linear-gradient(var(--ac2),var(--ac) 48%,var(--acd) 50%,var(--ac2));text-shadow:0 -1px 0 rgba(0,0,0,.25)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:22px}
+.stat{text-align:center;padding:16px 8px;border-radius:12px;background:linear-gradient(rgba(255,255,255,.95),rgba(255,255,255,.65));border:1px solid var(--line);box-shadow:inset 0 1px 0 #fff,0 6px 18px rgba(60,70,120,.08)}
+.stat b{display:block;font:300 34px "Segoe UI Light","Segoe UI",sans-serif;color:var(--ac)}.stat small{color:var(--mut);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.card{border:1px solid var(--line);border-radius:9px;padding:14px 16px;background:linear-gradient(#fff,#f8f9fd);box-shadow:inset 0 1px 0 #fff}
+.k{font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--ac);font-weight:600}
+h2{font-size:17px;font-weight:600;margin:2px 0 6px}p{margin:0 0 10px}
+.tag{display:inline-block;font-size:12px;padding:1px 10px;border-radius:20px;border:1px solid var(--ac2);background:linear-gradient(#fff,var(--tint));margin:0 4px 4px 0}
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+th{text-align:left;padding:8px 12px;background:linear-gradient(#fff,#eef1f8);border-bottom:1px solid var(--line)}
+td{padding:9px 12px;border-bottom:1px solid rgba(120,130,160,.18);vertical-align:top}tr:last-child td{border:0}
+.tbl{border:1px solid var(--line);border-radius:9px;overflow-x:auto;background:#fff}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.gal figure{margin:0;border:1px solid var(--line);border-radius:9px;overflow:hidden;background:#fff;box-shadow:0 4px 14px rgba(60,70,120,.1)}
+.gal img,.gal .ph2{width:100%;aspect-ratio:4/3;object-fit:cover;display:grid;place-items:center;background:linear-gradient(135deg,var(--tint),#fff);color:var(--mut);font-size:13px}
+.gal figcaption{padding:8px 12px;font-size:13.5px}
+iframe.cal{width:100%;height:680px;border:1px solid var(--line);border-radius:9px;background:#fff}
+footer{text-align:center;color:var(--mut);font-size:13px;padding:0 10px 30px}
+@media(max-width:700px){.hero{grid-template-columns:1fr}.orb{display:none}h1{font-size:30px}header b{display:none}}
+</style>
+</head>
+<body>
+<header><b id="brand"></b><nav id="nav"></nav><div class="sw" id="sw"></div></header>
+<main id="main"></main>
+<footer id="foot"></footer>
+
+<script>
+/* ============================================================
+   EDIT HERE — everything on the site comes from this block.
+   ============================================================ */
+const SITE = {
+  name: "Sri Kaleeswarar S",
+  tagline: "Physics · Quantum Computing · Scientific Python · Tamil Science Communication",
+  intro: "Final-year M.Sc. Physics student, scientific-software developer and quantum-computing educator. My work sits where physics meets computation: open-source tools, quantum algorithms, and explaining difficult ideas clearly in English and Tamil.",
+  photo: "",                       // profile photo: "images/me.jpg" or leave "" for the SK badge
+  github: "https://github.com/SRIKALEESWARAR-S",
+  email: "",                       // e.g. "you@example.com"
+  calendly: "",                    // paste your Calendly link here, e.g. "https://calendly.com/your-name/30min"
+  defaultPalette: "Magenta",
+  footer: "© 2026 Sri Kaleeswarar S"
+};
+
+/* Palettes: [name, light, main, dark, glow1, glow2, tint]. Add your own row. */
+const PALETTES = [
+  ["Magenta","#e04fc0","#b3179a","#8c0f77","#ffe3f6","#e6edff","#fbe9f7"],
+  ["Aero Blue","#5aaeea","#1d7fd0","#135a9c","#dcefff","#eef0ff","#e6f2fd"],
+  ["Emerald","#4cc79a","#14946a","#0b6a4a","#d9f7ea","#e6f1ff","#e4f6ee"],
+  ["Violet","#a98aee","#6f45d0","#4d2a9e","#ece3ff","#ffe6f6","#efe9fc"],
+  ["Sunset","#f4a259","#e0762a","#a8500f","#fff0dc","#ffe3ee","#fdeedd"],
+  ["Slate","#8c9bb5","#4d5d7c","#2f3b54","#e8ecf3","#f1f1f7","#edf0f6"]
+];
+
+/* Pages. Add a new page = add one object. Each block's "type" is one of:
+   stats | cards | text | table | gallery | calendly                      */
+const PAGES = [
+ { id:"home", title:"Home", hero:true, blocks:[
+   { type:"stats", items:[["145+","Kaniyam articles"],["17","quantum computing classes"],["150+","active learners, 10 countries"],["20,000+","reached through NGO materials"]] },
+   { type:"cards", title:"Highlights", items:[
+     { k:"Open source · PyPI", h:"Formulon Physics", p:"A unit-aware Python library for physics formulas, openly licensed.", link:["GitHub ↗","https://github.com/SRIKALEESWARAR-S/formulon"] },
+     { k:"Open Science Labs · Brazil", h:"Quantum computing for everyone", p:"17 entry-level classes with 150+ active participants." },
+     { k:"Scott Christian College", h:"Class Topper Award", p:"84% in the first semester of M.Sc. Physics." } ] } ]},
+
+ { id:"research", title:"Research", blocks:[
+   { type:"cards", title:"Research & Projects", items:[
+     { k:"Master’s dissertation", h:"Computational physics", p:"Completed a dissertation in computational physics that led to an entry-level, unit-aware Python library for physics.", tags:["Completed"] },
+     { k:"Open source · PyPI", h:"Formulon Physics", p:"A unit-informed Python library that organises physics formulas as reusable computational components, openly licensed and published on PyPI.", link:["GitHub ↗","https://github.com/SRIKALEESWARAR-S/formulon"] },
+     { k:"Quantum computing", h:"Algorithms & education", p:"Physical foundations of quantum computing and its algorithms, taught through entry-level material.", tags:["Research + teaching"] },
+     { k:"Exploratory", h:"Quantum machine learning", p:"Experiments with Legendre-polynomial representations, recurrent and transformer models, and hybrid quantum-classical workflows.", tags:["In progress"] } ] } ]},
+
+ { id:"teaching", title:"Teaching", blocks:[
+   { type:"cards", title:"Teaching & Outreach", items:[
+     { k:"Open Science Labs · Brazil", h:"Quantum computing for everyone", p:"Conducted 17 entry-level classes (through October 15) in conversational English, reaching 150+ active participants across 10 countries and 5 continents.", tags:["17 classes","150+ learners","English + Tamil"] },
+     { k:"Tamil outreach", h:"Kaniyam weekly meetings", p:"Introducing quantum computing to Tamil audiences in weekly online meetings, with encouraging response." },
+     { k:"Campus", h:"4 physics seminars", p:"Hosted seminars across different physics subjects in my department." },
+     { k:"Civic awareness", h:"Voter-awareness programme", p:"Initiated and organised programmes with the Arre Voice app at two institutions in Nagercoil." } ] },
+   { type:"gallery", title:"Photos", items:[ /* ["images/class1.jpg","Caption"] */ ] } ]},
+
+ { id:"writing", title:"Writing", blocks:[
+   { type:"table", title:"Publications", head:["Publication","Contribution"], rows:[
+     ["Kaniyam.com","145+ articles on electronics, quantum mechanics, computer science, open educational material and science achievements"],
+     ["Bookday.in","15 articles on science and technology"],
+     ["Ariviyal Palagai","11 articles on physics and technology"],
+     ["Puthiya Thendral","15 science articles"],
+     ["Tamil Computer magazine","Selected technical articles"] ] },
+   { type:"text", title:"Book in progress", html:"An electronics book, currently at the publication stage with Ailaysa International Publisher." } ]},
+
+ { id:"impact", title:"Impact", blocks:[
+   { type:"cards", title:"Community Impact", items:[
+     { k:"Sakshi International NGO", h:"Women empowerment & development", p:"Created educational and awareness materials for women-empowerment and development programmes, reaching 20,000+ people nationwide." } ] },
+   { type:"cards", title:"Academics & Memberships", items:[
+     { k:"Scott Christian College", h:"Class Topper Award", p:"Scored 84% in the first semester of M.Sc. Physics and received the award from the Principal." },
+     { k:"American Physical Society", h:"Member", p:"Active member; abstracts submitted to the Global Physics Summit 2027 in Atlanta, USA." },
+     { k:"Toolkit", h:"Technical stack", tags:["Python","PennyLane","Qiskit","PyTorch","PyPI"] } ] } ]},
+
+ { id:"book", title:"Book a Call", blocks:[
+   { type:"text", title:"Schedule a meeting", html:"Pick a time that suits you for a research discussion, collaboration or teaching enquiry." },
+   { type:"calendly" } ]},
+
+ { id:"contact", title:"Contact", blocks:[ { type:"text", title:"Contact", html:"Open to research discussions, PhD supervision enquiries, open-source collaboration, teaching and science communication.", buttons:true } ]}
+];
+/* ============================ END OF EDIT AREA ============================ */
+
+const $=s=>document.querySelector(s);
+const esc=s=>String(s);
+function btn(l,u,pri){return `<a class="btn${pri?' pri':''}" href="${u}" target="_blank" rel="noopener">${l}</a>`}
+function panel(t,body){return `<section class="panel">${t?`<div class="ph">${t}</div>`:''}<div class="pb">${body}</div></section>`}
+const R={
+ stats:b=>`<div class="stats">${b.items.map(i=>`<div class="stat"><b>${i[0]}</b><small>${i[1]}</small></div>`).join('')}</div>`,
+ cards:b=>panel(b.title,`<div class="grid">${b.items.map(c=>`<div class="card">${c.k?`<div class="k">${c.k}</div>`:''}<h2>${c.h}</h2>${c.p?`<p>${c.p}</p>`:''}${(c.tags||[]).map(t=>`<span class="tag">${t}</span>`).join('')}${c.link?`<div>${btn(c.link[0],c.link[1])}</div>`:''}</div>`).join('')}</div>`),
+ text:b=>panel(b.title,`<p>${b.html}</p>${b.buttons?[SITE.github&&btn('GitHub ↗',SITE.github,1),SITE.email&&btn('Email ↗','mailto:'+SITE.email),SITE.calendly&&btn('Book a call ↗',SITE.calendly)].filter(Boolean).join(''):''}`),
+ table:b=>panel(b.title,`<div class="tbl"><table><tr>${b.head.map(h=>`<th>${h}</th>`).join('')}</tr>${b.rows.map(r=>`<tr>${r.map((c,i)=>`<td>${i?c:'<b>'+c+'</b>'}</td>`).join('')}</tr>`).join('')}</table></div>`),
+ gallery:b=>panel(b.title,b.items.length?`<div class="gal">${b.items.map(i=>`<figure><img src="${i[0]}" alt="${i[1]||''}" loading="lazy"><figcaption>${i[1]||''}</figcaption></figure>`).join('')}</div>`:`<div class="gal"><figure><div class="ph2">Add photos in PAGES → gallery</div></figure><figure><div class="ph2">["images/photo.jpg","Caption"]</div></figure></div>`),
+ calendly:b=>panel('Calendly',SITE.calendly?`<iframe class="cal" src="${SITE.calendly}" title="Calendly scheduling"></iframe><p style="margin-top:10px">${btn('Open in new tab ↗',SITE.calendly)}</p>`:`<p>Your Calendly link isn’t set yet. Open this file and put it in <code>SITE.calendly</code> (top of the script) — the scheduler will appear here automatically.</p>`)
+};
+function hero(){return `<section class="panel"><div class="hero"><div><h1>${SITE.name.replace(/ (\S+)$/,' <span>$1</span>')}</h1><p class="role">${SITE.tagline}</p><p>${SITE.intro}</p><a class="btn pri" href="#research">View my work</a><a class="btn" href="#contact">Get in touch</a></div><div class="orb">${SITE.photo?`<img src="${SITE.photo}" alt="${SITE.name}">`:'SK'}</div></div></section>`}
+$('#brand').innerHTML=SITE.name.replace(/ (\S+)$/,' <span>$1</span>');
+$('#foot').textContent=SITE.footer;
+$('#nav').innerHTML=PAGES.map(p=>`<a href="#${p.id}" data-id="${p.id}">${p.title}</a>`).join('');
+$('#main').innerHTML=PAGES.map(p=>`<div class="page" id="p-${p.id}">${p.hero?hero():''}${p.blocks.map(b=>R[b.type](b)).join('')}</div>`).join('');
+function route(){let id=(location.hash||'#home').slice(1);if(!PAGES.some(p=>p.id===id))id='home';
+ document.querySelectorAll('.page').forEach(e=>e.classList.toggle('on',e.id==='p-'+id));
+ document.querySelectorAll('#nav a').forEach(a=>a.classList.toggle('on',a.dataset.id===id));window.scrollTo(0,0)}
+addEventListener('hashchange',route);route();
+function setPal(n){const p=PALETTES.find(x=>x[0]===n)||PALETTES[0],r=document.documentElement.style;
+ ['ac2','ac','acd','g1','g2','tint'].forEach((k,i)=>r.setProperty('--'+k,p[i+1]));
+ document.querySelectorAll('#sw button').forEach(b=>b.classList.toggle('on',b.title===p[0]));
+ try{localStorage.setItem('pal',p[0])}catch(e){}}
+$('#sw').innerHTML=PALETTES.map(p=>`<button title="${p[0]}" aria-label="${p[0]} palette" style="background:linear-gradient(${p[1]},${p[2]})"></button>`).join('');
+$('#sw').addEventListener('click',e=>{if(e.target.title)setPal(e.target.title)});
+let saved=null;try{saved=localStorage.getItem('pal')}catch(e){}
+setPal(saved||SITE.defaultPalette);
+</script>
+</body>
+</html>
